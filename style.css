@@ -68,17 +68,17 @@ h2 {
 .feature-kitten {
   padding-top: 60px;
   width:50px;
-  background-image: url("img/пакость.png")  ;
+  background-image: url("img/smallheart1.png")  ;
 }
 
 .feature-cat {
   padding-top: 60px;
-  background-image: url("img/пакость.png");
+  background-image: url("img/smallheart2.png");
 }
 
 .feature-train {
   padding-top: 60px;
-  background-image: url("img/пакость.png");
+  background-image: url("img/smallheart3.png");
 }
 
 .skills-list {
@@ -90,4 +90,30 @@ h2 {
   display: flex;
   justify-content: space-between;
   color: #999999;
+}
+
+/* Секція випадкових побажань кохання*/
+
+.wishes{
+  margin-top: 30px;
+  text-align: center;  
+}
+
+#btn_love_wishes {
+  background: #ff5a26;
+  color: #ffc5b3;
+  border: 5px solid #ffc5b3;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+#p_love-wishes {
+  height: 150px;
+  font-size: 28px;
+  line-height: 40px;
+  color: #ff5a26;
+  text-align: justify;
+  
 }
