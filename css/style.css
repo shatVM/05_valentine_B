@@ -6,6 +6,7 @@ body {
   color: #000000;
   background: #ffe2e2 url("../img/background.jfif") no-repeat;
   background-size: cover;
+  background-blend-mode: screen;
 }
 
 h1 {
@@ -91,6 +92,19 @@ h2 {
   display: flex;
   justify-content: space-between;
   color: #999999;
+}
+
+/* Підвал сайту з кнопкою купівлі та відображення 🧡*/
+
+.site-footer p {
+  background-color: #ffe2e2;
+  padding: 10px 20px;
+  border-radius: 0px 10px;
+  border: 1px solid #ff5a26;
+  cursor: pointer;  
+}
+.site-footer p:last-child {
+  cursor: help;
 }
 
 /* Секція випадкових побажань кохання*/
