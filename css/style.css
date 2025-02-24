@@ -4,7 +4,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #000000;
-  background: #ffffff url("img/background.jfif") no-repeat 50% 0;
+  background: #ffe2e2 url("../img/background.jfif") no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -66,25 +67,25 @@ h2 {
 }
 
 .feature-kitten {
-  padding-top: 60px;
-  width:50px;
-  background-image: url("img/smallheart1.png")  ;
+  padding-top: 60px;  
+  background-image: url("../img/smallheart1.png")  ;
 }
 
 .feature-cat {
   padding-top: 60px;
-  background-image: url("img/smallheart2.png");
+  background-image: url("../img/smallheart2.png");
 }
 
 .feature-train {
   padding-top: 60px;
-  background-image: url("img/smallheart3.png");
+  background-image: url("../img/smallheart3.png");
 }
 
 .skills-list {
   padding: 0;
   list-style: none;
 }
+
 
 .site-footer {
   display: flex;
