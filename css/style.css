@@ -114,7 +114,7 @@ h2 {
   text-align: center;  
 }
 
-#btn_love_wishes {
+#btn-love-wishes {
   background: #ff5a26;
   color: #ffc5b3;
   border: 5px solid #ffc5b3;
@@ -124,7 +124,7 @@ h2 {
   cursor: pointer;
 }
 
-#p_love-wishes {
+#p-love-wishes {
   height: 150px;
   font-size: 28px;
   line-height: 40px;

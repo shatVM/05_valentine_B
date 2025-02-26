@@ -13,39 +13,30 @@ const arrayOfLoveWishes = [
     "Бажаю безмежного щастя та найтепліших обіймів!",
     "Хай ваше кохання буде джерелом радості та натхнення!",
     "Бажаю знайти ту людину, яка зробить твоє життя справжньою казкою!",
-    "Нехай любов наповнює твоє життя сенсом і гармонією!",
-    "Хай завжди поруч буде людина, яка розуміє без слів!",
-    "Бажаю взаєморозуміння, ніжності та приємних несподіванок!",
-    "Хай кожна мить, проведена разом із коханою людиною, буде безцінною!",
-    "Нехай ваше кохання перемагає всі труднощі і стає тільки сильнішим!",
-    "Бажаю, щоб у вашому житті було більше романтичних моментів!",
-    "Хай кожен день буде сповнений любов’ю та ніжністю!",
-    "Нехай кохання буде безмежним, як небо, і яскравим, як зорі!"
+
 ]
 
 let countOfHearts = 5
 console.log('countOfHearts ' + countOfHearts)
-
 document.getElementById('count-of-hearts').innerText = '🧡'.repeat(countOfHearts)
 
 //Опрацювання натискання на кнопку "Отримати побажання"
-document.getElementById('btn_love_wishes').addEventListener('click', () => {
-
+document.getElementById('btn-love-wishes').addEventListener('click', () => {
     console.log('Button clicked');
-
     let index = Math.floor(Math.random() * arrayOfLoveWishes.length)
+    document.getElementById('p-love-wishes').innerText = arrayOfLoveWishes[index];
 
-    //console.log('Номер елементу масиву - ', index);
-
-    document.getElementById('p_love-wishes').innerText = arrayOfLoveWishes[index];
+    let randomIMG = Math.floor(Math.random()*3)
+    console.log('randomIMG '  + randomIMG);
+    document.getElementById('p-love-img').innerHTML = `<img src='img/gallery/${randomIMG}.png' alt = "Heart for U">`
 
     countOfHearts--
     console.log('countOfHearts ' + countOfHearts)
     document.getElementById('count-of-hearts').innerText = '🧡'.repeat(countOfHearts) + '🤍'.repeat(5 - countOfHearts)
-
     if (countOfHearts == 0) {
-        document.getElementById('btn_love_wishes').style.display = 'none'
-
+        //document.getElementById('btn-love-wishes').style.display = 'none'
+         document.getElementById('btn-love-wishes').style.background = 'white'
+          document.getElementById('btn-love-wishes').disabled = true
     }
 
 })
@@ -56,8 +47,9 @@ document.getElementById('btn-buy-hearts').addEventListener('click', () => {
 
     countOfHearts = 5
     document.getElementById('count-of-hearts').innerText = '🧡'.repeat(countOfHearts)
-    document.getElementById('btn_love_wishes').style.display = 'inline-block'
-    document.getElementById('p_love-wishes').innerText = ''
-
+    document.getElementById('btn-love-wishes').style.background = '#ff5a26'
+    document.getElementById('btn-love-wishes').disabled = false;
+    document.getElementById('p-love-wishes').innerText = ''
+    document.getElementById('p-love-img').innerHTML = ``
     console.log('btn-buy-hearts clicked')
 })
